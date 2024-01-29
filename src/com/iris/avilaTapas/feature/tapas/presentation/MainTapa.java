@@ -32,6 +32,6 @@ public class MainTapa {
     public static void modifyTapa(String tapaId,String nombre,double precio,String alergenos,String urlImg){
         ModifyTapaUseCase modifyTapaUseCase = new ModifyTapaUseCase(TapaDataRepository.newInstancia());
         modifyTapaUseCase.execute(tapaId,nombre,precio,alergenos,urlImg);
-        printTapas();
+        System.out.println("f");
     }
 }
