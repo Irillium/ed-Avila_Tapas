@@ -9,7 +9,7 @@ public class AddTapaUseCase {
         this.tapaRepository = tapaRepository;
     }
 
-    public ArrayList<Tapa> execute(Tapa tapa){
-        return tapaRepository.addTapa(tapa);
+    public void execute(Tapa tapa){
+        tapaRepository.addTapa(tapa);
     }
 }

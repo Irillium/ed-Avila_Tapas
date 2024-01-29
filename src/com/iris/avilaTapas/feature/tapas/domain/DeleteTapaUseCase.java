@@ -8,7 +8,7 @@ public class DeleteTapaUseCase {
     public DeleteTapaUseCase(TapaRepository tapaRepository) {
         this.tapaRepository = tapaRepository;
     }
-    public ArrayList<Tapa> execute(String tapaId){
-        return tapaRepository.deleteTapa(tapaId);
+    public void execute(String tapaId){
+         tapaRepository.deleteTapa(tapaId);
     }
 }

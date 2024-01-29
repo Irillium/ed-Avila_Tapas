@@ -9,6 +9,7 @@ public class Main {
         MainTapa.printTapa("02");
         MainTapa.deleteTapa("01");
         MainTapa.addTapa(new Tapa("03","fjif",3.74,"d","https://jfuf"));
-        MainTapa.modifyTapa("03","Sopita",6.90,"soja","https://tapas/sopita");
+        MainTapa.addTapa(new Tapa("04","didkdkkd",5.40,"sf","https://grg"));
+        MainTapa.modifyTapa("02","Sopita",6.90,"soja","https://tapas/sopita");
     }
 }

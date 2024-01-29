@@ -9,7 +9,7 @@ public class ModifyTapaUseCase {
         this.tapaRepository = tapaRepository;
     }
 
-    public ArrayList<Tapa> execute(String tapaId,String nombre,double precio,String alergenos,String urlImg){
-        return tapaRepository.obtainTapas();
+    public void execute(String tapaId,String nombre,double precio,String alergenos,String urlImg){
+        tapaRepository.modifyTapa( tapaId, nombre, precio, alergenos, urlImg);
     }
 }

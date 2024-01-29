@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public interface TapaRepository {
      ArrayList<Tapa> obtainTapas();
      Tapa obtainTapa(String tapaId);
-     ArrayList<Tapa>  deleteTapa(String tapaId);
-     ArrayList<Tapa> addTapa(Tapa tapa);
-     Tapa modifyTapa(String tapaId,String nombre,double precio,String alergenos,String urlImg);
+     void deleteTapa(String tapaId);
+     void addTapa(Tapa tapa);
+     void modifyTapa(String tapaId,String nombre,double precio,String alergenos,String urlImg);
 }
